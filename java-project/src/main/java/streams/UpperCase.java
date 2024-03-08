@@ -10,11 +10,7 @@ public class UpperCase {
 // }
 
 public static Collection<String> mapToUppercase(String... names) {
-	Collection<String> uppercaseNames = new ArrayList<>();
-	for(String name : names) {
-		uppercaseNames.add(name.toUpperCase());
-	}
-	return uppercaseNames;
+	return Stream.of(names).map(String::toUpperCase).collect(toList());
 }
 
 //{ autofold
