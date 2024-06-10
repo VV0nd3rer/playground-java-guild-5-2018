@@ -1,7 +1,11 @@
 // { autofold
 package streams;
 
-import java.util.*;
+
+import java.util.Comparator;
+import java.util.List;
+
+import static java.util.Comparator.comparing;
 
 public class MaxAndComparator {
 // }
@@ -18,7 +22,7 @@ public class MaxAndComparator {
 
 	public static Person getOldestPerson(List<Person> people) {
 		return people.stream()
-				.max(Comparator.comparing(Person::getAge))
+				.max(comparing(Person::getAge))
 				.get();
 	}
 
