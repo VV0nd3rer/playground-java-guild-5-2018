@@ -2,8 +2,7 @@
 package streams;
 
 import java.util.*;
-
-import static java.util.stream.Collectors.partitioningBy;
+import java.util.stream.Collectors;
 
 public class PartitionBy {
 // }
@@ -19,7 +18,7 @@ public class PartitionBy {
 	}
 
 	public static Map<Boolean, List<Person>> partitionAdults(List<Person> people) {
-		return people.stream().collect(partitioningBy(p -> p.getAge() >= 18));
+		return people.stream().collect(Collectors.partitioningBy(p -> p.getAge() >= 18));
 	}
 // { autofold
 }
