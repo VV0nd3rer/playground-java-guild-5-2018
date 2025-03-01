@@ -15,6 +15,7 @@ public class SumAndReduce {
 	}
 
 	public static int calculate(List<Integer> numbers) {
+//		return numbers.stream().mapToInt(Integer::intValue).sum();
 		return numbers.stream().reduce(0, Integer::sum);
 	}
 
