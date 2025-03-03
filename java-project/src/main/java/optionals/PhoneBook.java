@@ -1,6 +1,7 @@
 package optionals;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class PhoneBook {
 
@@ -21,11 +22,12 @@ public class PhoneBook {
     }
 
     public Optional<String> findPhoneNumberByName(String name){
-        return null;
+        return Optional.ofNullable(phoneBookEntries.get(name));
     }
 
     public Optional<String> findNameByPhoneNumber(String phoneNumber){
-        return null;
+        return phoneBookEntries.entrySet().stream().filter(i -> i.getValue().equals(phoneNumber))
+                        .map(Map.Entry::getKey).findFirst();
     }
 
     @Override
