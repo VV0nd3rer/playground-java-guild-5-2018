@@ -1,5 +1,7 @@
 package optionals;
 
+import java.util.NoSuchElementException;
+
 public class PhoneBookCrawler {
 
     private PhoneBook2 phoneBook;
@@ -9,7 +11,8 @@ public class PhoneBookCrawler {
     }
 
     public String findPhoneNumberByNameAndPunishIfNothingFound(String name){
-        return null;
+        return phoneBook.findPhoneNumberByName(name).orElseThrow(() ->
+                new IllegalArgumentException("No phone number found"));
     }
 
     public String findPhoneNumberByNameAndPrintPhoneBookIfNothingFound(String name){
