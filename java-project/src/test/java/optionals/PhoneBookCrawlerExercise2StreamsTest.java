@@ -9,7 +9,7 @@ public class PhoneBookCrawlerExercise2StreamsTest {
     @Rule
     public ExpectedException expectedException = ExpectedException.none();
 
-    private PhoneBookCrawler phoneBookCrawler = new PhoneBookCrawler(new PhoneBook2());
+    private PhoneBookCrawler phoneBookCrawler = new PhoneBookCrawler(new PhoneBook());
 
     @Test
     public void findPhoneNumberByNameAndPunishIfNothingFound() {

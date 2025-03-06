@@ -14,7 +14,7 @@ public class PhoneBook2Test {
     @Rule
     public ExpectedException expectedException = ExpectedException.none();
 
-    private PhoneBook2 phoneBook = new PhoneBook2();
+    private PhoneBook phoneBook = new PhoneBook();
 
     @Test
     public void findPhoneNumberByName() {

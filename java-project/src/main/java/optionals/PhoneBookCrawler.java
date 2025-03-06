@@ -4,9 +4,9 @@ import java.util.NoSuchElementException;
 
 public class PhoneBookCrawler {
 
-    private PhoneBook2 phoneBook;
+    private PhoneBook phoneBook;
 
-    public PhoneBookCrawler(PhoneBook2 phoneBook) {
+    public PhoneBookCrawler(PhoneBook phoneBook) {
         this.phoneBook = phoneBook;
     }
 
@@ -23,7 +23,7 @@ public class PhoneBookCrawler {
         return null;
     }
 
-    public PhoneBook2 getPhoneBook(){
+    public PhoneBook getPhoneBook(){
         return phoneBook;
     }
 

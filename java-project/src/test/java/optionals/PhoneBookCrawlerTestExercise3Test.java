@@ -6,7 +6,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 public class PhoneBookCrawlerTestExercise3Test {
 
-    private PhoneBookCrawler phoneBookCrawler = new PhoneBookCrawler(new PhoneBook2());
+    private PhoneBookCrawler phoneBookCrawler = new PhoneBookCrawler(new PhoneBook());
 
     @Test
     public void findPhoneNumberByNameAndReturnEntirePhoneBookIfNothingFound() {

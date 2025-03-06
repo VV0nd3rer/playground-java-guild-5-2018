@@ -40,7 +40,7 @@ public class PhoneBook2 {
 
     @Override
     public String toString() {
-        System.out.println("Hello from PhoneBook's toString method");
+        System.out.println("Hello from PhoneBook2's toString method");
         return "PhoneBook{" +
                 "phoneBookEntries=" + phoneBookEntries +
                 '}';
