@@ -15,4 +15,11 @@ public class PhoneBookCrawlerTestExercise3Test {
         assertThat(phoneBook).isEqualTo("PhoneBook{phoneBookEntries={An de Toekan=016/161617, Jos de Vos=016/161616, Kris de Vis=016/161618}}");
     }
 
+    @Test
+    public void findPhoneNumberByNameAndReturnEntirePhoneBookIfNothingFound_foundByName() {
+        String phoneNumber = phoneBookCrawler.findPhoneNumberByNameAndPrintPhoneBookIfNothingFound("Kris de Vis");
+
+        assertThat(phoneNumber).isEqualTo("016/161618");
+    }
+
 }
